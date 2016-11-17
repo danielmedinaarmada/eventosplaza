@@ -1,0 +1,11 @@
+.portada{
+  background-image: url("../images/índice.jpeg");
+  background-size: center;
+  height:468px;
+}
+
+.menu {
+  position: block;
+  text-decoration: none;
+  color:brown;
+}
