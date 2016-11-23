@@ -1,29 +1,60 @@
-.titulo {
-  font-size: 70px;
+body {
+  margin:0px;
 }
 
+.titulo {
+  font-size: 70px;
+  margin-bottom:0px;
+  margin-top: 150px;
+}
 
 .title-a {
   font-size:24px;
+  margin-top: 0px;
 }
 
 .title-b {
   font-size:50px;
+  margin-bottom: 20px;
 }
 
-.guitarra h2 {
+.servicios h2 {
   font-size: 35px;
 }
 
 .servicios {
-  color:brown;
+  width:885px;
+  margin:auto;
 }
 
 .portada {
   background-image: url("../images/índice.jpeg");
   color:brown;
+  padding:10px;
+  height: 468px;
+  width:885px;
+  margin:auto;
+}
+
+.portada button {
+  margin-bottom: 70px;
 }
 
 .menu {
   font-size: 24px;
+  display: inline-block;
+}
+
+.menu li {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.logotipo {
+  display: inline-block;
+}
+
+.header {
+  width:885px;
+  margin:auto;
 }
