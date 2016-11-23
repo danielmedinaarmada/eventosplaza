@@ -22,9 +22,25 @@ body {
   font-size: 35px;
 }
 
-.servicios {
-  width:885px;
-  margin:auto;
+.servicio {
+  overflow: hidden;
+  border: 1px solid black;
+  margin-bottom: 20px;
+  padding: 10px;
+  margin:10px;
+}
+
+.servicio ol {
+  padding: 0px;
+}
+
+
+.contenedor-servicio-derecha {
+  padding-left: 20px;
+}
+
+.contenedor-servicio-izquierda {
+  margin-left: 380px;
 }
 
 .portada {
@@ -32,8 +48,6 @@ body {
   color:brown;
   padding:10px;
   height: 468px;
-  width:885px;
-  margin:auto;
 }
 
 .portada button {
@@ -54,7 +68,15 @@ body {
   display: inline-block;
 }
 
-.header {
+.contenedor {
   width:885px;
   margin:auto;
+}
+
+.derecha {
+  float:right;
+}
+
+.izquierda{
+  float:left;
 }
