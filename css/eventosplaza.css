@@ -2,6 +2,14 @@ body {
   margin:0px;
 }
 
+button {
+  border-radius: 5px;
+  background: #fd324e;
+  color:white;
+  border: none;
+  padding:7px;
+}
+
 .titulo {
   font-size: 70px;
   margin-bottom:0px;
@@ -20,14 +28,6 @@ body {
 
 .servicios h2 {
   font-size: 35px;
-}
-
-.servicio {
-  overflow: hidden;
-  border: 1px solid black;
-  margin-bottom: 20px;
-  padding: 10px;
-  margin:10px;
 }
 
 .servicio ol {
@@ -54,9 +54,16 @@ body {
   margin-bottom: 70px;
 }
 
+.header {
+  position: relative;
+}
+
 .menu {
   font-size: 24px;
   display: inline-block;
+  /*float: right;*/
+  position: absolute;
+  right:0px;
 }
 
 .menu li {
@@ -73,10 +80,46 @@ body {
   margin:auto;
 }
 
+
+.servicio {
+  overflow: hidden; 
+  border: 1px solid black;
+  margin-bottom: 20px;
+  padding: 10px;
+  margin:10px;
+  position: relative;
+  border-radius: 10px;
+}
+
+
 .derecha {
   float:right;
+  position: absolute;
+  bottom: 0px;
+  right:0px;
 }
 
 .izquierda{
   float:left;
+  position: absolute;
+  bottom: 0px;
+  left:0px;
+}
+
+
+.footer {
+  background: #F2F5A9;
+}
+
+.contacto img{
+  display:block;
+}
+
+.contacto strong {
+  display: block;
+}
+
+.contacto a{
+  display: inline-block;
+  text-decoration: none;
 }
