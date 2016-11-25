@@ -2,12 +2,13 @@ body {
   margin:0px;
 }
 
-button {
+.button {
   border-radius: 5px;
   background: #fd324e;
   color:white;
   border: none;
   padding:7px;
+  margin-top: 10px;
 }
 
 .titulo {
@@ -106,12 +107,22 @@ button {
   left:0px;
 }
 
-
 .footer {
   background: #F2F5A9;
 }
 
+.footer .contenedor {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacto {
+  display: flex;
+  flex-direction: column;
+}
+
 .contacto img{
+  width: 150px;
   display:block;
 }
 
@@ -120,6 +131,37 @@ button {
 }
 
 .contacto a{
-  display: inline-block;
+  display: block;
   text-decoration: none;
+  margin-left: 10px 10px 10px 0px;
+  padding: 10px;
+  color:black;
+}
+
+.datos {
+  display: flex;
+}
+
+.formulario {
+  display: flex;
+}
+
+.col1, .col2 {
+  margin-left: 10px;
+}
+
+.col1 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.sexo, .intereses {
+  margin-top: 15px;
+}
+
+.intereses {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 15px;
 }

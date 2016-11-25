@@ -23,7 +23,7 @@
     <div class="contenedor">
       <h1 class="titulo">Eventos Plaza.</h1> <!--titulo -->
       <h3 class="title-a">Tu sueño hecho fiesta</h3> <!-- resumen -->
-      <button>Conoce más</button> <!--boton  (Conoce más)-->
+      <button class="button">Conoce más</button> <!--boton  (Conoce más)-->
     </div>
   </section>
   <section id="servicios" class="servicios contenedor"><!-- evento o servicios-->
@@ -88,45 +88,51 @@
     <div class="contenedor">
       <div class="contacto">
         <img src="images/logo.jpg" alt="Logo eventos plaza"/>
-        <a href="tel:+34639177061"><strong>Teléfono:</strong><span>+34 639177061</span></a>
-        <a href="mailto:eventosplaza2016@gmail.com"><strong>E-mail</strong><span>eventosplaza2016@gmail.com</span></a>
+        <div class="datos">
+          <a href="tel:+34639177061"><strong>Teléfono:</strong><span>(+34)639-7061</span></a>
+          <a href="mailto:eventosplaza2016@gmail.com"><strong>E-mail</strong><span>eventosplaza2016@gmail.com</span></a>
+        </div>
       </div>
+      <form class="formulario">
+        <div class="col1">
+          <label for="nombre">Nombre
+            <input type="text" name="nombre" id="nombre" required />
+          </label>
+          <label for="email">E-mail
+            <input type="email" name="email" id="email" required />
+          </label>
+          <div class="sexo">
+            <label for="mujer">
+              <input type="radio" name="sexo" id="mujer" value="mujer "/>Mujer
+            </label>
+            <label for="hombre">
+               <input type="radio" name="sexo" id="hombre" value="hombre"/> Hombre
+            </label>
+          </div>
+          <div class="intereses">
+            <label for="cotizacion">
+              <input type="checkbox" name="intereses" id="cotizacion" value="cotizacion"/>Cotización
+            </label>
+            <label for="reclamo">
+              <input type="checkbox" name="intereses" id="reclamo" value="reclamo"/>Reclamo        
+            </label>
+            <label for="comentario">
+                <input type="checkbox" name="intereses" id="comentario" value="comentario"/>Comentario
+            </label>
+            <label for="otro">
+                <input type="checkbox" name="intereses" id="otro" value="otro"/>Otro
+            </label>
+          </div>
+        </div>
+        <div class="col2">
+          <div class="comentarios">
+            <label for="comentarios">Comentarios</label>
+            <textarea cols="30" rows="7" id="comentarios" names="comentarios"></textarea>
+            <input class="button" type="submit" name="submit" value="Enviar"/>
+          </div>
+        </div>
+      </form>
     </div>
-    <form class="formulario">
-      <label for="nombre">Nombre
-        <input type="text" name="nombre" id="nombre" required />
-      </label>
-      <label for="email">E-mail
-        <input type="email" name="email" id="email" required />
-      </label>
-      <div clas="sexo">
-        <label for="mujer">
-          <input type="radio" name="sexo" id="mujer" value="mujer "/>Mujer
-        </label>
-        <label for="hombre">
-           <input type="radio" name="sexo" id="hombre" value="hombre"/> Hombre
-        </label>
-      </div>
-      <div>
-        <label for="cotizacion">
-          <input type="checkbox" name="intereses" id="cotizacion" value="cotizacion"/>Cotización
-        </label>
-        <label for="reclamo">
-          <input type="checkbox" name="intereses" id="reclamo" value="reclamo"/>Reclamo        
-        </label>
-        <label for="comentario">
-            <input type="checkbox" name="intereses" id="comentario" value="comentario"/>Comentario
-        </label>
-        <label for="otro">
-            <input type="checkbox" name="intereses" id="otro" value="otro"/>Otro
-        </label>
-      </div>
-      <div class="comentarios">
-        <label for="comentarios">Comentarios</label>
-        <textarea cols="30" rows="7" id="comentarios" names="comentarios"></textarea>
-        <input type="submit" name="submit" value="Enviar"/>
-      </div>
-    </form>
   </footer>
 </body>
 </html>
