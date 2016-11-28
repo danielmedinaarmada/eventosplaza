@@ -1,20 +1,29 @@
 body {
   margin:0px;
 }
+  
+.contenedor {
+  width:885px;
+  margin:auto;
+}
 
 .button {
-  border-radius: 5px;
+  border-radius: 12px;
   background: #fd324e;
   color:white;
   border: none;
-  padding:7px;
+  cursor: pointer;
+  padding:7px 12px;
   margin-top: 10px;
+  font-size: 20px;
+  background: linear-gradient(to left, #fe344e, #ff7250);
+  text-decoration: none;
 }
 
 .titulo {
   font-size: 70px;
   margin-bottom:0px;
-  margin-top: 150px;
+  margin-top: 7%;
 }
 
 .title-a {
@@ -25,27 +34,37 @@ body {
 .title-b {
   font-size:50px;
   margin-bottom: 20px;
+
 }
 
 .servicios h2 {
   font-size: 35px;
 }
 
+
 .servicio ol {
   padding: 0px;
 }
 
+.servicios {
+  margin-bottom: 30px;
+}
 
 .contenedor-servicio-derecha {
   padding-left: 20px;
+  position: relative;
+  bottom: 50px;
 }
 
 .contenedor-servicio-izquierda {
   margin-left: 380px;
+  position: relative;
+  bottom: 50px;
 }
 
 .portada {
   background-image: url("../images/índice.jpeg");
+  background-size: cover;
   color:brown;
   padding:10px;
   height: 468px;
@@ -74,13 +93,8 @@ body {
 
 .logotipo {
   display: inline-block;
+  margin-left: 0px;
 }
-
-.contenedor {
-  width:885px;
-  margin:auto;
-}
-
 
 .servicio {
   overflow: hidden; 
@@ -91,7 +105,6 @@ body {
   position: relative;
   border-radius: 10px;
 }
-
 
 .derecha {
   float:right;
@@ -114,6 +127,7 @@ body {
 .footer .contenedor {
   display: flex;
   justify-content: space-between;
+  padding-top: 20px;
 }
 
 .contacto {
@@ -134,7 +148,7 @@ body {
   display: block;
   text-decoration: none;
   margin-left: 10px 10px 10px 0px;
-  padding: 10px;
+  padding: 10px;f
   color:black;
 }
 
@@ -162,7 +176,6 @@ body {
   align-items: flex-start;
 
 }
-
 
 .sexo, .intereses {
   margin-top: 15px;
