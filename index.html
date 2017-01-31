@@ -1,138 +1,95 @@
 <!DOCTYPE html>
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Eventos Plaza - Tu sueño hecho fiesta.</title>
-  <meta charset="utf-8"/>
-  <link rel="shortcut icon" href="images/logo.ico"> <!-- tienes 16px por 16px y extension icos  -->
-  <link rel="stylesheet" type="text/css" href="css/eventosplaza.css">
-</head>
-<body>
-  <header id="header" class="header contenedor"> <!-- header -->
-    <figure class="logotipo"> <!-- logotipo-->
-       <img src="images/logo.jpg" alt="Logo Eventos Plaza" width="150" height="150" />  <!-- logotipo -->
-    </figure>
-    <nav id="menu" class="menu"> <!-- menu de opciones -->
-      <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="">Contactanos</a></li>
-      </ul>
-    </nav>
-  </header>
-  <section id="portada" class="portada"> <!-- portada-->
-    <div class="contenedor">
-      <h1 class="titulo">Eventos Plaza.</h1> <!--titulo -->
-      <h3 class="title-a">Tu sueño hecho fiesta</h3> <!-- resumen -->
-      <button class="button">Conoce más</button> <!--boton  (Conoce más)-->
-    </div>
-  </section>
-  <section id="servicios" class="servicios contenedor"><!-- evento o servicios-->
-    <h2>Recuerdos y eventos para tu fiesta</h2>  
-    <article class="servicio"> <!-- Evento 1-->
-      <img class="derecha" src="images/centrodemesa.jpg" alt="Centro de Mesa Primera Comunión" height="350" /> <!-- Imagen de centro de primera comunión-->
-      <div class="contenedor-servicio-derecha"> 
-        <h3  class="title-b">Centros de Mesa</h3> <!--titulo: servicio 1 - Centro de Mesa -->
-        <ol> <!-- caracteristicas -->
-          <li> Artesanales</li>
-          <li> Conmemorativos</li>
-          <li> Representativos</li>
-        </ol>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Eventos Plaza - Tu sueño hecho fiesta.</title>
+    <!-- etiqueta meta datos viewport, nos ayuda a mostrar correctamente nuestro contenido según el área visible del usuario. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes"/>
+    <link rel="stylesheet" href="css/estilos.css"/>
+  </head>
+  <body onload="sliderTimer()">
+    <header class="header">
+      <nav class="menu">
+        <ul>
+          <li>
+            <a href="index.html">
+              <img src="images/logo_eventos_plaza.jpeg" alt="logo_eventos_plaza" height="80">
+              <span>Inicio</span>
+            </a>
+          </li>
+          <li>
+            <a href="fiesta_tematica.html">
+              <img src="images/fiesta_tematica.png" alt="imagen fiestas temáticas" height="80">
+              <span>Fiestas</span> <span>Temáticas</span>
+            </a>
+          </li>          
+
+          <li>
+            <a href="comuniones.html">
+              <img src="images/comunion.png" alt="imagen Comuniones" height="80">
+              <span>Comuniones</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="bodas.html">
+              <img src="images/boda.png" alt="imagen bodas" height="80">
+              <span>Bodas</span>
+            </a>
+          </li>          
+
+          <li>
+            <a href="nacimientos.html">
+              <img src="images/nacimiento.png" alt="imagen nacimientos" height="80">
+              <span>Nacimientos</span>
+            </a>
+          </li>          
+
+          <li>
+            <a href="BarDulce.html">
+              <img src="images/BarDulce.png" alt="imagen del bar de dulces" height="80">
+              <span>Bar de dulces</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="sonido.html">
+              <img src="images/sonido.png" alt="imagen sonido" height="80">
+              <span>Sonido</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="escribenos.html">
+              <img src="images/contactanos.png" alt="imagen escríbenos" height="80">
+              <span>Escríbenos</span>
+            </a>
+          </li>
+
+        </ul>
+      </nav>
+    </header>
+    <!-- Introducción a Eventos plaza-->
+    <section>
+
+      <div class="presentacion">
+        <img id="slider" src="images/logo_eventos_plaza.png" height="400">
+        <div class="icon" id="left"><i class="icon icon-circle-left" onclick="prev()"></i></div>
+       <div class="icon" id="right"><i class="icon icon-circle-right" onclick="next()"></i></div>
       </div>
-    </article>
-    <article class="servicio">
-      <img  class="izquierda" src="images/recuerdo.jpg" alt="Imagen de Recuerdos" width="350" /> <!-- Imagen de recuerdos-->
-      <div class="contenedor-servicio-izquierda"> 
-        <h3  class="title-b">Recuerdos</h3> <!-- titulo: servicio 2 - Sonido -->
-        <ol> <!-- caracteristicas -->
-          <li> Artesanales</li>
-          <li> Conmemorativos</li>
-          <li> Representativos</li>
-        </ol>
-      </div>
-    </article>
-    <article class="servicio">
-      <img class="derecha" src="images/sonido.jpg" alt="Imagen de Sonido" width="350" /> <!-- Imagen de sonido -->
-      <div class="contenedor-servicio-derecha"> 
-        <h3  class="title-b">Sonido</h3> <!--titulo: servicio 3 - Recuerdos -->
-        <ol> <!-- caracteristicas -->
-          <li> Artesanales</li>
-          <li> Conmemorativos</li>
-          <li> Representativos</li>
-        </ol>   
-      </div>
-    </article>    
-    <article class="servicio">
-      <img  class="izquierda" src="images/luces.jpg" alt="Imagen de Luces" width="350" /> <!-- Imagen de Sonido -->
-      <div class="contenedor-servicio-izquierda"> 
-        <h3  class="title-b">Luces</h3> <!--titulo: servicio 3 - Recuerdos -->
-        <ol> <!-- caracteristicas -->
-          <li> Artesanales</li>
-          <li> Conmemorativos</li>
-          <li> Representativos</li>
-        </ol>
-      </div>   
-    </article>    
-    <article class="servicio">
-      <img  class="derecha" src="images/sonido.jpg" alt="Imagen de Sonido" width="300" />
-      <div class="contenedor-servicio-derecha"> 
-        <h3  class="title-b">Fiesta</h3> <!--titulo: servicio 3 - Recuerdos -->
-        <ol> <!-- caracteristicas -->
-          <li> Artesanales</li>
-          <li> Conmemorativos</li>
-          <li> Representativos</li>
-        </ol>
-      </div>
-    </article>    
-  </section>
-  <footer class="footer">
-    <div class="contenedor">
-      <div class="contacto">
-        <img src="images/logo.jpg" alt="Logo eventos plaza"/>
-        <div class="datos">
-          <a href="tel:+34639177061"><strong>Teléfono:</strong><span>(+34)639-7061</span></a>
-          <a href="mailto:eventosplaza2016@gmail.com"><strong>E-mail</strong><span>eventosplaza2016@gmail.com</span></a>
-        </div>
-      </div>
-      <form class="formulario">
-        <div class="col1">
-          <label for="nombre">Nombre
-            <input type="text" name="nombre" id="nombre" required />
-          </label>
-          <label for="email">E-mail
-            <input type="email" name="email" id="email" required />
-          </label>
-          <div class="sexo">
-            <label for="mujer">
-              <input type="radio" name="sexo" id="mujer" value="mujer "/>Mujer
-            </label>
-            <label for="hombre">
-               <input type="radio" name="sexo" id="hombre" value="hombre"/> Hombre
-            </label>
-          </div>
-          <div class="intereses">
-            <label for="cotizacion">
-              <input type="checkbox" name="intereses" id="cotizacion" value="cotizacion"/>Cotización
-            </label>
-            <label for="reclamo">
-              <input type="checkbox" name="intereses" id="reclamo" value="reclamo"/>Reclamo        
-            </label>
-            <label for="comentario">
-                <input type="checkbox" name="intereses" id="comentario" value="comentario"/>Comentario
-            </label>
-            <label for="otro">
-                <input type="checkbox" name="intereses" id="otro" value="otro"/>Otro
-            </label>
-          </div>
-        </div>
-        <div class="col2">
-          <div class="comentarios">
-            <label for="comentarios">Comentarios</label>
-            <textarea cols="30" rows="7" id="comentarios" names="comentarios"></textarea>
-            <input class="button" type="submit" name="submit" value="Enviar"/>
-          </div>
-        </div>
-      </form>
-    </div>
-  </footer>
-</body>
+        <h2 id="sliderHeader">Eventos Plaza</h2>
+        <p id="sliderPara">Haz de tu fiesta un evento inolvidable!</p>
+
+    </section>
+
+    <footer class="footer">
+       <h2>footer</h2>
+       <h2>footer</h2>
+       <h2>footer</h2> 
+    </footer>
+
+    <script type="text/javascript" src="js/script.js"></script>
+
+  </body>
 </html>
