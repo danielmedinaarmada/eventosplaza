@@ -6,64 +6,62 @@
     <!-- etiqueta meta datos viewport, nos ayuda a mostrar correctamente nuestro contenido según el área visible del usuario. -->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes"/>
     <link rel="stylesheet" href="css/estilos.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
   </head>
-  <body>
+  <body onload="sliderTimer()">
     <header class="header">
       <nav class="menu">
         <ul>
           <li>
             <a href="index.html">
-              <img src="images/logo_eventos_plaza.jpeg" alt="logo_eventos_plaza" height="60">
+              <img src="images/logo_eventos_plaza.jpeg" alt="logo_eventos_plaza" height="80">
               <span>Inicio</span>
             </a>
           </li>
           <li>
             <a href="fiesta_tematica.html">
-              <img src="images/fiesta_tematica.png" alt="imagen fiestas temáticas" height="60">
+              <img src="images/fiesta_tematica.png" alt="imagen fiestas temáticas" height="80">
               <span>Fiestas</span> <span>Temáticas</span>
             </a>
           </li>          
 
           <li>
             <a href="comuniones.html">
-              <img src="images/comunion.png" alt="imagen Comuniones" height="60">
+              <img src="images/comunion.png" alt="imagen Comuniones" height="80">
               <span>Comuniones</span>
             </a>
           </li>
 
           <li>
             <a href="bodas.html">
-              <img src="images/boda.png" alt="imagen bodas" height="60">
+              <img src="images/boda.png" alt="imagen bodas" height="80">
               <span>Bodas</span>
             </a>
           </li>          
 
           <li>
             <a href="nacimientos.html">
-              <img src="images/nacimiento.png" alt="imagen nacimientos" height="60">
+              <img src="images/nacimiento.png" alt="imagen nacimientos" height="80">
               <span>Nacimientos</span>
             </a>
           </li>          
 
           <li>
             <a href="BarDulce.html">
-              <img src="images/BarDulce.png" alt="imagen del bar de dulces" height="60">
+              <img src="images/BarDulce.png" alt="imagen del bar de dulces" height="80">
               <span>Bar de dulces</span>
             </a>
           </li>
 
           <li>
             <a href="sonido.html">
-              <img src="images/sonido.png" alt="imagen sonido" height="60">
+              <img src="images/sonido.png" alt="imagen sonido" height="80">
               <span>Sonido</span>
             </a>
           </li>
 
           <li>
             <a href="escribenos.html">
-              <img src="images/contactanos.png" alt="imagen escríbenos" height="60">
+              <img src="images/contactanos.png" alt="imagen escríbenos" height="80">
               <span>Escríbenos</span>
             </a>
           </li>
@@ -73,36 +71,15 @@
     </header>
     <!-- Introducción a Eventos plaza-->
     <section>
-      <div class="presentacion" id="slideshow">
-        <figure class="carousel">
-          <a href="#"><img src="images/logo_eventos_plaza.png" alt="Logo Eventos Plaza" height="300"></a> 
-          <figcaption>Evenos Plaza</figcaption>
-        </figure><!-- La compañia-->
-        <figure class="carousel">
-          <a href="fiesta_tematica.html"><img src="images/carousel-ft.jpg" alt="Foto recuedo fiesta temática" height="300"></a> <!-- Fiestas temáticas-->
-          <figcaption>Fiestas temáticas</figcaption>
-        </figure>
-        <figure class="carousel">
-          <a href="comuniones.html"><img src="images/carousel_c.jpg" alt="Foto recuerdo comunión" height="300"></a><!-- Comuniones -->
-          <figcaption>Comuniones</figcaption>
-        </figure>
-        <figure class="carousel">
-          <a href="bodas.html"><img src="images/carousel-b.jpg" alt="Foto recuerdo boda" height="300"></a> <!--  Bodas -->
-          <figcaption>Bodas</figcaption>
-        </figure>
-        <figure class="carousel">
-          <a href="nacimientos.html"><img src="images/carousel-n.jpg" alt="Foto recuerdo nacimiento" height="300"></a> <!-- Nacimientos-->
-          <figcaption>Nacimientos</figcaption>
-        </figure>
-        <figure class="carousel">
-          <a href="BarDulce.html"><img src="images/carousel_bd.jpg" alt="Foto bar de los dulces" height="300"></a> <!-- Sonido-->
-          <figcaption>Bar de Dulces</figcaption>
-        </figure>
-        <figure class="carousel">
-          <a href="sonido.html"><img src="images/carousel_s.jpg" alt="Foto recuerdo sonido" height="300"></a> <!-- Sonido-->
-          <figcaption>Sonido</figcaption>
-        </figure>        
+
+      <div class="presentacion">
+        <img id="slider" src="images/logo_eventos_plaza.png" height="400">
+        <div class="icon" id="left"><i class="icon icon-circle-left" onclick="prev()"></i></div>
+       <div class="icon" id="right"><i class="icon icon-circle-right" onclick="next()"></i></div>
       </div>
+        <h2 id="sliderHeader">Eventos Plaza</h2>
+        <p id="sliderPara">Haz de tu fiesta un evento inolvidable!</p>
+
     </section>
 
     <footer class="footer">
@@ -111,7 +88,7 @@
        <h2>footer</h2> 
     </footer>
 
-    <script type="text/javascript" src="js/slideshow.js"></script> 
+    <script type="text/javascript" src="js/script.js"></script>
 
   </body>
 </html>
