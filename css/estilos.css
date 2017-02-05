@@ -24,18 +24,24 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.presetacion {
+  display: relative;
+}
 
 .icon-circle-right:before {
   content: "\ea42";
   position: absolute;
   top: 50%;
   right:8%;
+  z-index: 2;
 }
+
 .icon-circle-left:before {
   content: "\ea44";
   position: absolute;
   top: 50%;
   left:8%;
+  z-index: 2;
 }
 
 .icon {
@@ -48,26 +54,40 @@
   color: gray;
 }
 
+
 body {
   height: 100vh;
   font-size: .65rem;
   margin:0;
   height: 100vh;
-  background-color: rgb(252, 243, 207); 
+  /*background-color: rgb(252, 243, 207); */
+  background-image: url("../images/bg-body.jpg");
+  background-size: cover;
   display: flex;
   flex-direction: column;
 }
 
 section {
-    margin:50px;
+    margin:15px 0 0 0;
     flex:1;
     display: inline-block;
     text-align: center;
 }
 
+section h2  {
+  font-size: 1rem;
+  margin: 0;
+}
+
+section p {
+   font-size: 1rem;
+   margin: 0;
+}
+
 #slider{
   text-align: center;
   position: relative;
+  overflow: hidden;
 }
 
 .header {
@@ -81,8 +101,10 @@ section {
   display: inline-block;
 }
 
+
 .header span {
   display: block;
+  font-size: 1rem;
 }
 
 .header .menu {
@@ -115,14 +137,39 @@ section {
   list-style: none;
   text-decoration: none;
   text-align: center;
+  transition: .3s;
+  transform: scale(1);
+}
+
+.header .menu li a:hover {
+  transform: scale(1.3);
+}
+
+.imagen-izquierda {
+  position: absolute;
+  top: 38%;
+  left:3%;
+  overflow: hidden;
+}
+
+.imagen-derecha {
+  position: absolute;
+  top: 38%;
+  right: 4%;
+  overflow: hidden;
 }
 
 
+footer {
+  /*border: 1px solid red;*/
 
-
-.footer {
-  height:30px;
-  background: lightgreen;
 }
 
+footer.header {
+    position: relative;
+    background: none;
+}
 
+.footer.menu  {
+  padding:0;
+}
