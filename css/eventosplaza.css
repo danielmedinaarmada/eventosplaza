@@ -9,13 +9,13 @@ body {
 
 .button {
   border-radius: 12px;
-  background: #fd324e;
   color:white;
   border: none;
   cursor: pointer;
   padding:7px 12px;
   margin-top: 10px;
   font-size: 20px;
+  /* background: #fd324e; */
   background: linear-gradient(to left, #fe344e, #ff7250);
   text-decoration: none;
 }
@@ -99,9 +99,8 @@ body {
 .servicio {
   overflow: hidden; 
   border: 1px solid black;
-  margin-bottom: 20px;
   padding: 10px;
-  margin:10px;
+  margin:10px 10px 40px 10px;
   position: relative;
   border-radius: 10px;
 }
