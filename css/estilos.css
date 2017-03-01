@@ -24,23 +24,18 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.presetacion {
+.presentacion {
   display: relative;
+  padding: 15px 0 5px 0;
 }
 
 .icon-circle-right:before {
   content: "\ea42";
-  position: absolute;
-  top: 50%;
-  right:8%;
   z-index: 2;
 }
 
 .icon-circle-left:before {
   content: "\ea44";
-  position: absolute;
-  top: 50%;
-  left:8%;
   z-index: 2;
 }
 
@@ -52,6 +47,18 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: gray;
+}
+
+.icon-izq{
+  position: absolute;
+  top:50%;
+  left:0%;
+}
+
+.icon-der{
+  position: absolute;
+  top:50%;
+  right: 0%;
 }
 
 
@@ -67,27 +74,42 @@ body {
   flex-direction: column;
 }
 
-section {
-    margin:15px 0 0 0;
+.presentaciones {
     flex:1;
-    display: inline-block;
+    display: block;
+    position: relative;
     text-align: center;
+    border: 1px solid red;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
-section h2  {
+.presentaciones h2  {
   font-size: 1rem;
   margin: 0;
 }
 
-section p {
+.presentaciones p {
    font-size: 1rem;
    margin: 0;
+}
+
+.presentacion{
+  position: absolute;
 }
 
 #slider{
   text-align: center;
   position: relative;
   overflow: hidden;
+}
+
+#sliderHeader {
+  padding: 5px 0 5px 0;
+}
+
+#sliderPara {
+  padding: 5px 0 5px 0;
 }
 
 .header {
@@ -159,6 +181,17 @@ section p {
   overflow: hidden;
 }
 
+.contenedor {
+  margin: 0 auto
+  border: 1px solid red;
+  max-width: 1000px;
+}
+
+.articulos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
 footer {
   /*border: 1px solid red;*/
@@ -170,6 +203,6 @@ footer.header {
     background: none;
 }
 
-.footer.menu  {
+#footer  {
   padding:0;
 }

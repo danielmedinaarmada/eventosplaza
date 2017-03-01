@@ -49,7 +49,7 @@ function slider()
   var slider= document.getElementById('slider');
   /*slider.style.backgroundImage= "url(\'"+imgadr[cnt]+"\')";*/
   slider.setAttribute("src", ""+imgadr[cnt]+""); /*nuevo codigo*/
-  slider.setAttribute("height", "400"); /*nuevo codigo*/
+  slider.setAttribute("height", "350"); /*nuevo codigo*/
   slider.setAttribute("alt", ""+alt[cnt]+""); /*nuevo codigo*/
   document.getElementById('sliderHeader').innerHTML= headArray[cnt];  //or append?
   document.getElementById('sliderPara').innerHTML= paraArray[cnt];
