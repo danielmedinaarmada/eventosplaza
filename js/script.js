@@ -21,7 +21,7 @@ var paraArray= ['Haz de tu fiesta un evento inolvidable!',
         'El matrimonio es para personas especiales, para parejas que aman con un amor excepcional has que dure para siempre!',
         'El nacimiento',
         'El bar de dulces',
-				'ElSonido'];
+				'El Sonido'];
 var alt=['imagen logo',
           'imagen exhibición',
           'imagen fiesta temática',
@@ -49,7 +49,7 @@ function slider()
   var slider= document.getElementById('slider');
   /*slider.style.backgroundImage= "url(\'"+imgadr[cnt]+"\')";*/
   slider.setAttribute("src", ""+imgadr[cnt]+""); /*nuevo codigo*/
-  slider.setAttribute("height", "350"); /*nuevo codigo*/
+  slider.setAttribute("height", "400"); /*nuevo codigo*/
   slider.setAttribute("alt", ""+alt[cnt]+""); /*nuevo codigo*/
   document.getElementById('sliderHeader').innerHTML= headArray[cnt];  //or append?
   document.getElementById('sliderPara').innerHTML= paraArray[cnt];
