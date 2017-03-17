@@ -21,7 +21,7 @@ var paraArray= ['Haz de tu fiesta un evento inolvidable!',
         'El matrimonio es para personas especiales, para parejas que aman con un amor excepcional has que dure para siempre!',
         'El nacimiento',
         'El bar de dulces',
-				'ElSonido'];
+				'El Sonido'];
 var alt=['imagen logo',
           'imagen exhibición',
           'imagen fiesta temática',
