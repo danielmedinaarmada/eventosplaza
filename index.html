@@ -79,7 +79,7 @@
 
       <div class="presentacion">
         <div class="left" id="left"><i class="icon icon-circle-left" onclick="prev()"></i></div>
-        <img id="slider" src="images/logo_eventos_plaza2.png" height="400">
+        <img class="b-lazy" id="slider" src= "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="images/logo_eventos_plaza2.png" height="400">
         <div class="right" id="right"><i class="icon icon-circle-right" onclick="next()"></i>  </div>
         <h2 id="sliderHeader">Eventos Plaza</h2>
         <p id="sliderPara">Haz de tu fiesta un evento inolvidable!</p>
@@ -147,7 +147,17 @@
        </nav>
     </footer>
 
+    <script src="js/blazy.min.js"></script>
+    <script>
+      ;(function() {
+          // Initialize
+          var bLazy = new Blazy();
+          selector: 'img' // all images
+      })();
+    </script>
     <script type="text/javascript" src="js/script.js"></script>
+      
+
 
   </body>
 </html>
