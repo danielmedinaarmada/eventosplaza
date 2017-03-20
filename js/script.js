@@ -67,7 +67,7 @@ function next()
   var slider= document.getElementById('slider');
   /*slider.style.backgroundImage= "url(\'"+imgadr[cnt]+"\')";*/
   slider.setAttribute("src", ""+imgadr[cnt]+""); /*nuevo codigo*/
-  slider.setAttribute("height", "400"); /*nuevo codigo*/
+  slider.setAttribute("width", "300"); /*nuevo codigo*/
   slider.setAttribute("alt", ""+alt[cnt]+""); /*nuevo codigo*/
   document.getElementById('sliderHeader').innerHTML= headArray[cnt];
   document.getElementById('sliderPara').innerHTML= paraArray[cnt];
@@ -87,7 +87,7 @@ console.log('prev');
   var slider= document.getElementById('slider');
   /*slider.style.backgroundImage= "url(\'"+imgadr[cnt]+"\')";*/
   slider.setAttribute("src", ""+imgadr[cnt]+""); /*nuevo codigo*/
-  slider.setAttribute("height", "400"); /*nuevo codigo*/
+  slider.setAttribute("width", "300"); /*nuevo codigo*/
   slider.setAttribute("alt", ""+alt[cnt]+""); /*nuevo codigo*/
   document.getElementById('sliderHeader').innerHTML= headArray[cnt];
   document.getElementById('sliderPara').innerHTML= paraArray[cnt];
