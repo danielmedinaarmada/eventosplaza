@@ -14,14 +14,6 @@ var headArray= ['Eventos Plaza',
                 'Nacimiento', 
                 'El bar de dulces',
                 'Sonido'];
-var paraArray= ['Haz de tu fiesta un evento inolvidable!',
-				'Nuestra exhibición!', 
-        'Sorprende a esa persona tan especial para ti con una fiesta única!', 
-				'Hoy has recibido el sacramento de la comunión. Recordarlo con alegría.',
-        'El matrimonio es para personas especiales, para parejas que aman con un amor excepcional has que dure para siempre!',
-        'El nacimiento',
-        'El bar de dulces',
-				'El Sonido'];
 var alt=['imagen logo',
           'imagen exhibición',
           'imagen fiesta temática',
@@ -52,7 +44,6 @@ function slider()
   slider.setAttribute("width", "300"); /*nuevo codigo*/
   slider.setAttribute("alt", ""+alt[cnt]+""); /*nuevo codigo*/
   document.getElementById('sliderHeader').innerHTML= headArray[cnt];  //or append?
-  document.getElementById('sliderPara').innerHTML= paraArray[cnt];
   cnt++;
 }
 
@@ -70,7 +61,6 @@ function next()
   slider.setAttribute("width", "300"); /*nuevo codigo*/
   slider.setAttribute("alt", ""+alt[cnt]+""); /*nuevo codigo*/
   document.getElementById('sliderHeader').innerHTML= headArray[cnt];
-  document.getElementById('sliderPara').innerHTML= paraArray[cnt];
   
   sliderTimer();
 }
@@ -90,7 +80,6 @@ console.log('prev');
   slider.setAttribute("width", "300"); /*nuevo codigo*/
   slider.setAttribute("alt", ""+alt[cnt]+""); /*nuevo codigo*/
   document.getElementById('sliderHeader').innerHTML= headArray[cnt];
-  document.getElementById('sliderPara').innerHTML= paraArray[cnt];
     
   sliderTimer();
 }
