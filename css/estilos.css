@@ -198,12 +198,16 @@ body {
   text-align: center;
 }
 
+.principal{
+  margin-bottom: 20px;
+}
+
 .articulos {
   margin: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
 }
 
 .articulo {
