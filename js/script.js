@@ -12,7 +12,7 @@ var headArray= ['Eventos Plaza',
                 'Comunión', 
                 'La boda', 
                 'Nacimiento', 
-                'El bar de dulces',
+                'Candy Bar',
                 'Sonido'];
 var alt=['imagen logo',
           'imagen exhibición',
@@ -20,7 +20,7 @@ var alt=['imagen logo',
           'imagen comunión',
           'imagen boda',
           'imagen nacimiento',
-          'imagen bar de dulce',
+          'imagen candy bar',
           'imagen sonido'];
 var cnt= 0;
 var timer;
